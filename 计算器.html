@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>计算器</title>
+</head>
+<body>
+    <script>
+        var a = prompt("加法请按1 减法请按2 乘法请按3 除法请按4")
+        switch(a){
+            case"1":
+                var e = prompt("请输入第一个加数","") 
+                var t = prompt("请输入第二个加数","")
+                e = Number(e)
+                t = Number(t)
+                var g = t + e
+                alert("等于" + g)
+                var j = prompt("你要继续吗 继续请输入1，结束请输入2")
+                break
+            case"2":
+                var y = prompt("请输入被减数","")
+                var f = prompt("请输入减数","")
+                y = Number(y)
+                f = Number(f)
+                var p = y - f
+                alert("等于" + p)
+                break
+            case"3":
+                var h = prompt("请输入第一个乘数","")
+                var i = prompt("请输入第二个乘数","")
+                h = Number(h)
+                i = Number(i)
+                var j = h * i
+                alert("等于" + j)
+                break
+            case"4":
+                var k = prompt("请输入被除数","")
+                var l = prompt("请输入商数","")
+                k = Number(k)
+                l = Number(l)
+                var m = k / l
+                alert("等于" + m)
+                break
+            default:
+                alert("你选择没有内容包括选项")
+        }
+    </script>
+</body>
+</html>
